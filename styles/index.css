@@ -90,6 +90,7 @@
   font-family: Asap-Medium;
   font-size: 1.3em;
   text-align: center;
+  font-weight: bold;
 }
 .max-selector-country-container {
   display: flex;
