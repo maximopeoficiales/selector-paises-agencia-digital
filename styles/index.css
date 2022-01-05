@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap");
+@import url("../../assets/fonts/Asap-Medium.ttf");
+@font-face {
+  font-family: "Asap-Medium";
+  src: url("../../assets/fonts/Asap-Medium.ttf");
+  src: local("Asap Medium"), local("Asap-Medium"),
+    url("../../assets/fonts/Asap-Medium.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +29,7 @@
   width: 80%;
   font-size: 1.1em;
   border-radius: 10px;
-  font-family: Asap;
+  font-family: Asap-Medium;
   font-weight: bold;
   cursor: pointer;
   -webkit-transition: background-color 0.4s ease;
@@ -33,9 +39,10 @@
   color: #000;
   max-width: 180px;
   font-size: 1.3em;
-  margin-top: 50px;
   border: none;
+  margin-top: 20px;
 }
+/* banner */
 .banner {
   height: 60vh;
   background-image: url("../../assets/imgs/banner-risk-desk.jpg");
@@ -57,6 +64,32 @@
   }
 }
 
+/* selector */
+.max-indicator-selector {
+  color: #87031d;
+  font-family: Asap-Medium, cursive;
+  font-size: 2.2em;
+  line-height: 0.8em;
+  font-weight: 400;
+
+}
+.max-selector-country {
+  width: 300px;
+  display: block;
+  margin: 20px auto 0;
+  /* margin-top: 0; */
+  border: unset;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid;
+  border-radius: 5px;
+  padding: 8px 6px;
+  color: #333;
+  font-family: Asap-Medium;
+  font-size: 1.3em;
+  text-align: center;
+}
 .max-selector-country-container {
   display: flex;
   flex-direction: column;

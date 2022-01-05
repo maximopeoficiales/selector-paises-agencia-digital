@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="" />
     <title>Document</title>
   </head>
   <body>
@@ -13,24 +14,41 @@
       <form id="form-selector-country">
         <div class="max-selector-country-container">
           <div class="max-my-2 max-text-center">
-            <h5>Selecciona tu país</h5>
-            <h5>Choose your country</h5>
+            <h5 class="max-indicator-selector">Selecciona tu país</h5>
+            <h5 class="max-indicator-selector">Choose your country</h5>
           </div>
-          <div class="">
-            <select id="max-selector-country">
-              <option value="colombia">Colombia</option>
-              <option value="peru">Peru</option>
-              <option value="venezuela">Venezuela</option>
-              <option value="ecuador">Ecuador</option>
-              <option value="panama">Panamá</option>
-              <option value="costa_rica">Costa Rica</option>
-              <option value="mexico">México</option>
-              <option value="usa">USA</option>
+          <div class="max-my-2">
+            <select id="max-selector-country" class="max-selector-country">
+              <option value="colombia" link="#">Colombia</option>
+              <option value="peru" link="#peru">Peru</option>
+              <option value="venezuela" link="#">Venezuela</option>
+              <option value="ecuador" link="#">Ecuador</option>
+              <option value="panama" link="#">Panamá</option>
+              <option value="costa_rica" link="#">Costa Rica</option>
+              <option value="mexico" link="#">México</option>
+              <option value="usa" link="#">USA</option>
             </select>
           </div>
-          <button class="max-button max-my-4">Continuar</button>
+          <button type="submit" class="max-button max-my-4">Continuar</button>
         </div>
       </form>
     </section>
+
+    
+    <!--logica de redireccion segun lo seleccionado  -->
+    <script>
+      let selector = document.querySelector("#max-selector-country");
+      document
+        .querySelector("#form-selector-country")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          //   console.log(selector.value);
+          let link =
+            selector.options[selector.selectedIndex].getAttribute("link");
+          if (link !== "#") {
+            window.location = link;
+          }
+        });
+    </script>
   </body>
 </html>
