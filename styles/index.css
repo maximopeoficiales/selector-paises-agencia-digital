@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  height: 60vh;
+  background-image: url("../../assets/imgs/banner-risk-desk.jpg");
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 50vh;
+    background-image: url("../../assets/imgs/banner-risk-mobile.jpg");
+  }
+}
+@media (min-width: 1140px) {
+  .banner {
+    height: 650px;
+    background-image: url("../../assets/imgs/banner-risk-desk.jpg");
+  }
+}
