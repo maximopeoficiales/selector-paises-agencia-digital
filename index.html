@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="" />
-    <title>Document</title>
+    <title>Selector de Paises</title>
   </head>
   <body>
     <section>
@@ -26,7 +25,7 @@
               <option value="panama" link="#">Panamá</option>
               <option value="costa_rica" link="#">Costa Rica</option>
               <option value="mexico" link="#">México</option>
-              <option value="usa" link="#">USA</option>
+              <option value="usa" link="https://www.google.com/">USA</option>
             </select>
           </div>
           <button type="submit" class="max-button max-my-4">Continuar</button>
@@ -34,7 +33,6 @@
       </form>
     </section>
 
-    
     <!--logica de redireccion segun lo seleccionado  -->
     <script>
       let selector = document.querySelector("#max-selector-country");
@@ -42,7 +40,6 @@
         .querySelector("#form-selector-country")
         .addEventListener("submit", (e) => {
           e.preventDefault();
-          //   console.log(selector.value);
           let link =
             selector.options[selector.selectedIndex].getAttribute("link");
           if (link !== "#") {
