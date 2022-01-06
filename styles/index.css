@@ -1,9 +1,9 @@
-@import url("../../assets/fonts/Asap-Medium.ttf");
+@import url("./../assets/fonts/Asap-Medium.ttf");
 @font-face {
   font-family: "Asap-Medium";
-  src: url("../../assets/fonts/Asap-Medium.ttf");
+  src: url("./../assets/fonts/Asap-Medium.ttf");
   src: local("Asap Medium"), local("Asap-Medium"),
-    url("../../assets/fonts/Asap-Medium.ttf") format("truetype");
+    url("./../assets/fonts/Asap-Medium.ttf") format("truetype");
 }
 * {
   margin: 0;
@@ -45,7 +45,7 @@
 /* banner */
 .banner {
   height: 60vh;
-  background-image: url("../../assets/imgs/banner-risk-desk.jpg");
+  background-image: url("./../assets/imgs/banner-risk-desk.jpg");
   object-fit: contain;
   background-size: cover;
   background-position: center;
@@ -54,13 +54,13 @@
 @media (max-width: 768px) {
   .banner {
     height: 50vh;
-    background-image: url("../../assets/imgs/banner-risk-mobile.jpg");
+    background-image: url("./../assets/imgs/banner-risk-mobile.jpg");
   }
 }
 @media (min-width: 1140px) {
   .banner {
     height: 650px;
-    background-image: url("../../assets/imgs/banner-risk-desk.jpg");
+    background-image: url("./../assets/imgs/banner-risk-desk.jpg");
   }
 }
 
