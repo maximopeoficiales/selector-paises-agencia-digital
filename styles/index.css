@@ -1,9 +1,7 @@
-@import url("./../assets/fonts/Asap-Medium.ttf");
+@import url("./../assets/fonts/Roboto-Bold.ttf");
 @font-face {
-  font-family: "Asap-Medium";
-  src: url("./../assets/fonts/Asap-Medium.ttf");
-  src: local("Asap Medium"), local("Asap-Medium"),
-    url("./../assets/fonts/Asap-Medium.ttf") format("truetype");
+  font-family: "Roboto-Bold";
+  src: url("./../assets/fonts/Roboto-Bold.ttf");
 }
 * {
   margin: 0;
@@ -29,7 +27,7 @@
   width: 80%;
   font-size: 1.1em;
   border-radius: 10px;
-  font-family: Asap-Medium;
+  font-family: Roboto-Bold;
   font-weight: bold;
   cursor: pointer;
   -webkit-transition: background-color 0.4s ease;
@@ -44,34 +42,32 @@
 }
 /* banner */
 .banner {
-  height: 60vh;
-  background-image: url("./../assets/imgs/banner-risk-desk.jpg");
-  object-fit: contain;
-  background-size: cover;
-  background-position: center;
+  height: 30vh;
+  background-image: url("./../assets/imgs/banner-header-desk.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @media (max-width: 768px) {
   .banner {
-    height: 50vh;
-    background-image: url("./../assets/imgs/banner-risk-mobile.jpg");
+    height: 300px;
+    background-image: url("./../assets/imgs/banner-header-mobile.jpg");
   }
 }
 @media (min-width: 1140px) {
   .banner {
-    height: 650px;
-    background-image: url("./../assets/imgs/banner-risk-desk.jpg");
+    height: 50vh;
+    background-image: url("./../assets/imgs/banner-header-desk.jpg");
   }
 }
 
 /* selector */
 .max-indicator-selector {
   color: #87031d;
-  font-family: Asap-Medium, cursive;
+  font-family: Roboto-Bold, cursive;
   font-size: 2.2em;
   line-height: 0.8em;
   font-weight: 400;
-
 }
 .max-selector-country {
   width: 300px;
@@ -87,7 +83,7 @@
   padding: 8px 6px;
   color: #333;
   background-color: transparent;
-  font-family: Asap-Medium;
+  font-family: Roboto-Bold;
   font-size: 1.3em;
   text-align: center;
   font-weight: bold;
