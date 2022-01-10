@@ -39,6 +39,9 @@
   border: none;
   margin-top: 20px;
 }
+.max-button:hover {
+  background-color: #d4681be6;
+}
 /* banner */
 .banner {
   background-size: 100% 100%;
