@@ -1,7 +1,10 @@
-@import url("./../assets/fonts/Roboto-Bold.ttf");
 @font-face {
   font-family: "Roboto-Bold";
   src: url("./../assets/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "RobotoCondensed-Light";
+  src: url("./../assets/fonts/RobotoCondensed-Light.ttf");
 }
 * {
   margin: 0;
@@ -19,7 +22,7 @@
   text-align: center;
 }
 .max-button {
-  background: #ff6b00;
+  background: #ff6a0e;
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -104,18 +107,20 @@
 
 /* selector */
 .max-indicator-selector {
-  color: #212b45;
+  color: #004682;
   font-family: Roboto-Bold, cursive;
   font-size: 2rem;
   line-height: 0.8em;
   font-weight: 400;
 }
+
 .max-text-indicator-english {
   font-size: 1.3em;
   margin-top: 0.8rem;
   font-weight: 200;
 }
 .max-selector-country {
+  font-family: RobotoCondensed-Light, cursive;
   width: 300px;
   display: block;
   margin: 20px auto 0;
@@ -129,7 +134,6 @@
   padding: 8px 6px;
   color: #333;
   background-color: transparent;
-  font-family: Roboto-Bold;
   font-size: 1.3em;
   text-align: center;
   font-weight: bold;
@@ -143,4 +147,8 @@
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.max-selector-country option {
+  font-family: RobotoCondensed-Light, cursive;
 }
