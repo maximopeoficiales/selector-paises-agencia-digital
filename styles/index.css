@@ -82,18 +82,20 @@
 @media (min-width: 992px) {
   .banner {
     height: 25vh;
+    background-image: url("./../assets/imgs/banner-header-desk.jpg");
   }
   .contenido {
     height: 50vh;
   }
   .banner-footer {
     height: 25vh;
+    background-image: url("./../assets/imgs/banner-footer-desk.jpg");
   }
 }
 
 @media (min-width: 1140px) {
   .banner {
-    height: 30vh;
+    height: 35vh;
     background-image: url("./../assets/imgs/banner-header-desk.jpg");
   }
   .contenido {
@@ -101,7 +103,7 @@
   }
   .banner-footer {
     height: 30vh;
-    background-image: url("./../assets/imgs/banner-footer-mobile.jpg");
+    background-image: url("./../assets/imgs/banner-footer-desk.jpg");
   }
 }
 
