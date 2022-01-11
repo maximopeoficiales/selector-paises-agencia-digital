@@ -129,27 +129,27 @@ body {
 }
 @media (min-width: 1024px) {
   .banner {
-    height: 300px;
+    height: 250px;
     background-image: url("./../assets/imgs/banner-header-desk.jpg");
   }
   .contenido {
-    height: 400px;
+    height: 500px;
   }
   .banner-footer {
-    height: 300px;
+    height: 250px;
     background-image: url("./../assets/imgs/banner-footer-desk.jpg");
   }
 }
 @media (min-width: 1140px) {
   .banner {
-    height: 315px;
+    height: 430px;
     background-image: url("./../assets/imgs/banner-header-desk.jpg");
   }
   .contenido {
-    height: 370px;
+    height: 430px;
   }
   .banner-footer {
-    height: 315px;
+    height: 430px;
     background-image: url("./../assets/imgs/banner-footer-desk.jpg");
   }
 }
