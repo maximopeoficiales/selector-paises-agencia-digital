@@ -10,6 +10,10 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  height: 1000px;
+}
 .max-my-2 {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -47,7 +51,7 @@
 }
 /* banner */
 .banner {
-  height: 15vh;
+  height: 150px;
   background-image: url("./../assets/imgs/banner-header-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -57,11 +61,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 700px;
 }
 .banner-footer {
-  bottom: 0;
-  height: 15vh;
+  height: 150px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -70,62 +73,74 @@
 
 @media (min-width: 540px) {
   .banner {
-    height: 25vh;
+    height: 200px;
   }
   .contenido {
-    height: 50vh;
+    height: 600px;
   }
   .banner-footer {
-    height: 25vh;
+    height: 200px;
   }
 }
 
 @media (min-width: 768px) {
   .banner {
-    height: 25vh;
+    height: 250px;
   }
   .contenido {
-    height: 50vh;
+    height: 500px;
   }
   .banner-footer {
-    height: 25vh;
+    height: 250px;
   }
 }
-
-@media (min-width: 992px) {
+@media (min-width: 912px), (min-height: 1368px) {
   .banner {
-    height: 25vh;
+    height: 300px;
     background-image: url("./../assets/imgs/banner-header-desk.jpg");
   }
   .contenido {
-    height: 50vh;
+    height: 768px;
   }
   .banner-footer {
-    height: 25vh;
+    height: 300px;
+    background-image: url("./../assets/imgs/banner-footer-desk.jpg");
+  }
+}
+@media (min-width: 992px) {
+  .banner {
+    height: 210px;
+    background-image: url("./../assets/imgs/banner-header-desk.jpg");
+  }
+  .contenido {
+    height: 580px;
+  }
+  .banner-footer {
+    height: 210px;
     background-image: url("./../assets/imgs/banner-footer-desk.jpg");
   }
 }
 @media (min-width: 1024px) {
   .banner {
-    height: 35vh;
+    height: 300px;
   }
   .contenido {
-    height: 40vh;
+    height: 400px;
   }
   .banner-footer {
-    height: 35vh;
+    height: 300px;
   }
 }
 @media (min-width: 1140px) {
   .banner {
-    height: 35vh;
+    height: 315px;
     background-image: url("./../assets/imgs/banner-header-desk.jpg");
   }
   .contenido {
-    height: 40vh;
+    height: 370px;
   }
   .banner-footer {
-    height: 30vh;
+    height: 315px;
     background-image: url("./../assets/imgs/banner-footer-desk.jpg");
   }
 }
